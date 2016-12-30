@@ -17,6 +17,7 @@ gem 'coffee-rails', '~> 4.2'
 # gem 'therubyracer', platforms: :ruby
 #use gem 'trix'
 gem 'trix'
+gem 'font-awesome-sass', '~> 4.5.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
