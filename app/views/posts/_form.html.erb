@@ -17,8 +17,13 @@
   </div>
 
   <div class="field">
+    <%= f.label :date_published %>
+    <%= f.date_select :created_at %>
+  </div>
+
+  <div class="field">
     <%= f.label :body %>
-    <%= f.text_area :body %>
+    <%= f.trix_editor :body %>
   </div>
 
   <div class="actions">

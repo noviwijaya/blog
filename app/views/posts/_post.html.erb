@@ -1,2 +1,13 @@
- <h2><%= link_to_unless_current post.title, post %></h2>
- <%= simple_format post.body %>
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">
+			<%= link_to post.title, post %>
+		</h3>
+	</div>
+
+	<div class="panel-body">
+		<p><em>Posted at <%= friendly_date post.created_at %></em></p>
+
+		<%= post.body %>
+	</div>
+</div>
