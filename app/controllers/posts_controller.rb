@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_filter :authenticate, :except => [ :index, :show, :about ]
+  before_action :authenticate, :except => [ :index, :show, :about ], notice: 'Only the mistress of this blog can create and delete posts, are you her? If not, go and build your own blog.'
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
   # GET /posts
