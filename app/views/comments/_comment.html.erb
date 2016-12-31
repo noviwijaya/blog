@@ -1,4 +1,7 @@
-<%= div_for comment do %>
-	<p><strong>Posted <%= time_ago_in_words(comment.created_at) %> ago</strong>
-	<br/><%= comment.body %></p>
-<% end %>
+<p><%= comment.author %></p>
+
+<blockquote>
+	<%= comment.body %>
+</blockquote>
+
+<%= link_to 'Destroy', [comment.post, comment], method: :delete, data: {confirm: 'Are you sure?'} %>
