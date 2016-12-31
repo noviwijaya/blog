@@ -8,6 +8,6 @@
 	<div class="panel-body">
 		<p><em>Posted at <%= friendly_date post.created_at %></em></p>
 
-		<%= post.body %>
+		<%= sanitize post.body %>
 	</div>
 </div>
